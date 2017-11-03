@@ -2,7 +2,6 @@
 
 var requiredEnv = [
     'JIRA_DOMAIN',
-    'JIRA_PATH',
     'JIRA_USER',
     'JIRA_PASS',
     'STATUS_API_ID',
