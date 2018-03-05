@@ -1,3 +1,4 @@
+<div style="width:800">
 <h1>{{#if resolved}}Resolved {{/if}}Incident Notification</h1>
 <h2>{{cloud}}</h2>
 
@@ -13,30 +14,28 @@
 
 <div style="padding:0.5em"><b>Component:</b> {{details.issue_type}}<br /></div>
 
-<div style="padding:0.5em"><b>Locations:</b> {{details.location}}<br /></div>
+<div style="padding:0.5em"><b>Impacted Services:</b> {{details.location}}<br /></div>
 
 <div style="padding:0.5em">
     <b>Current Status:</b><br />
-<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
+<p>
 {{current_status}}
-</pre>
+</p>
 </div>
 
 <div style="padding:0.5em">
     <b>Impact:</b><br />
-<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
-{{impact}}
-</pre>
+<p>
+{{impact_txt}}
+</p>
 </div>
 
-{{#unless resolved}}
 <div style="padding:0.5em">
     <b>Resolution Actions:</b><br />
-<pre style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
+<p style="font-family: sans-serif; padding-left:0.5em;margin:0.5em;">
 {{resolution_actions}}
-</pre>
+</p>
 </div>
-{{/unless}}
 
 {{#if resolved}}
 <div style="padding:0.5em"><b>Root Cause:</b> {{details.root_cause}}<br /></div>
@@ -55,3 +54,4 @@
 <div style="padding:0.5em"><b>Incident Status:</b> {{details.incident_status}}<br /></div>
 
 <div style="padding:0.5em"><b>Incident Manager:</b> {{details.incident_manager}}<br /></div>
+</div>

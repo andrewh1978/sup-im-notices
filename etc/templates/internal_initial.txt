@@ -6,13 +6,13 @@ Incident Title: {{#if resolved}}[Resolved] {{/if}}{{{ID}}} - {{{summary}}}
 Priority: {{{details.priority}}}
 Incident Description: {{{details.incident_description}}}
 Component: {{{details.issue_type}}}
-Locations: {{{details.location}}}
+Impacted Services: {{{details.location}}}
 Current Status:
 {{{current_status_txt}}}
 Impact:
-{{{impact_txt}}}{{#unless resolved}}
+{{{impact_txt}}}
 Resolution Actions:
-{{{resolution_actions_txt}}}{{/unless}}{{#if resolved}}
+{{{resolution_actions_txt}}}{{#if resolved}}
 Root Cause: {{{details.root_cause}}}{{/if}}
 Incident Start Time: {{{details.incident_start_time}}}{{#if resolved}}
 Incident End Time: {{{details.incident_end_time}}}{{/if}}{{#if resolved}}
