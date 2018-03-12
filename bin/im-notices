@@ -2,11 +2,10 @@
 
 var requiredEnv = [
     'JIRA_DOMAIN',
+    'STATUSPAGE_API_TOKEN',
+    'STATUSPAGE_URL',
     'JIRA_USER',
-    'JIRA_PASS',
-    'STATUS_API_ID',
-    'STATUS_API_TOKEN',
-    'STATUS_URL'];
+    'JIRA_PASS'];
 
 requiredEnv.forEach(function (i) {
     if (!process.env[i]) {
